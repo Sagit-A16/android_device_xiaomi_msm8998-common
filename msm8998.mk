@@ -410,3 +410,7 @@ $(call inherit-product, vendor/xiaomi/msm8998-common/msm8998-common-vendor.mk)
 
 # Sign with our key
 $(call inherit-product, vendor/sagit/keys/keys.mk)
+
+PRODUCT_PACKAGES += \
+    libstagefright_foundation-v33 \
+    XiaomiDolby
