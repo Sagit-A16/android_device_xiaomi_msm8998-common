@@ -15,12 +15,3 @@ cc_library_shared {
     ],
     vendor: true,
 }
-
-cc_library_shared {
-    name: "libdng_sdk_shim",
-    srcs: ["dng_area_task.cpp"],
-    shared_libs: [
-        "libdng_sdk",
-    ],
-    vendor: true,
-}

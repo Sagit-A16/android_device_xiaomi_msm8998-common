@@ -86,7 +86,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib/libMiCameraHal.so': blob_fixup()
         .add_needed('libcamera_shim.so')
-        .add_needed('libdng_sdk_shim.so')
         .add_needed('libpiex_shim.so')
         .clear_symbol_version('AHardwareBuffer_acquire')
         .clear_symbol_version('AHardwareBuffer_describe')
